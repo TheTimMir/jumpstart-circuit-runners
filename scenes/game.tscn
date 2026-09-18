@@ -1,0 +1,125 @@
+[gd_scene format=3 uid="uid://jq7wyjhlvovp"]
+
+[ext_resource type="Script" uid="uid://cfxjuso57y7io" path="res://scripts/game.gd" id="1_iywne"]
+[ext_resource type="Script" uid="uid://dnj4dsqwa7sex" path="res://scripts/board.gd" id="1_uwrxv"]
+[ext_resource type="Resource" uid="uid://be8ahyc6va1a2" path="res://settings/settings.tres" id="2_p57ef"]
+[ext_resource type="PackedScene" uid="uid://dsmt65jksdpvt" path="res://scenes/circuit_cell.tscn" id="3_lbhrr"]
+[ext_resource type="PackedScene" uid="uid://c1bcky868w2b5" path="res://scenes/elecrton.tscn" id="4_lbhrr"]
+[ext_resource type="PackedScene" uid="uid://dqn7qxwibx88o" path="res://scenes/GameHud.tscn" id="6_0tnpc"]
+[ext_resource type="Theme" uid="uid://q85jv82aq28n" path="res://pixelkiln_ui/ironvale/theme.tres" id="6_gee14"]
+[ext_resource type="Script" uid="uid://uf8amve23qsw" path="res://scripts/pause_menu.gd" id="7_u5sy4"]
+[ext_resource type="Script" uid="uid://bnrvmi4gonh83" path="res://scripts/complete_menu.gd" id="8_gee14"]
+
+[node name="Game" type="Node2D" unique_id=1681415683]
+script = ExtResource("1_iywne")
+settings = ExtResource("2_p57ef")
+
+[node name="Board" type="Node2D" parent="." unique_id=141510844]
+position = Vector2(100, 100)
+script = ExtResource("1_uwrxv")
+circuit_cell_scene = ExtResource("3_lbhrr")
+
+[node name="Electron" parent="." unique_id=202974781 instance=ExtResource("4_lbhrr")]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1014709930]
+zoom = Vector2(0.5, 0.5)
+position_smoothing_enabled = true
+position_smoothing_speed = 6.0
+
+[node name="ui" type="CanvasLayer" parent="." unique_id=1285878277]
+
+[node name="GameHud" parent="ui" unique_id=7754749 instance=ExtResource("6_0tnpc")]
+unique_name_in_owner = true
+
+[node name="PauseMenu" type="Control" parent="ui" unique_id=71162822]
+process_mode = 2
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("6_gee14")
+script = ExtResource("7_u5sy4")
+
+[node name="CenterContainer" type="CenterContainer" parent="ui/PauseMenu" unique_id=1745280648]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="ui/PauseMenu/CenterContainer" unique_id=1315593419]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ui/PauseMenu/CenterContainer/PanelContainer" unique_id=242526052]
+layout_mode = 2
+
+[node name="PausedLable" type="Label" parent="ui/PauseMenu/CenterContainer/PanelContainer/VBoxContainer" unique_id=523077181]
+layout_mode = 2
+text = "PAUSED"
+horizontal_alignment = 1
+
+[node name="ResumeButton" type="Button" parent="ui/PauseMenu/CenterContainer/PanelContainer/VBoxContainer" unique_id=661495211]
+layout_mode = 2
+text = "Resume"
+
+[node name="RestartButton" type="Button" parent="ui/PauseMenu/CenterContainer/PanelContainer/VBoxContainer" unique_id=536110894]
+layout_mode = 2
+text = "Restart"
+
+[node name="MenuButton" type="Button" parent="ui/PauseMenu/CenterContainer/PanelContainer/VBoxContainer" unique_id=330073528]
+layout_mode = 2
+text = "Back to menu"
+
+[node name="CompleteMenu" type="Control" parent="ui" unique_id=683964025]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+theme = ExtResource("6_gee14")
+script = ExtResource("8_gee14")
+
+[node name="CenterContainer" type="CenterContainer" parent="ui/CompleteMenu" unique_id=1978799889]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="ui/CompleteMenu/CenterContainer" unique_id=942985726]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ui/CompleteMenu/CenterContainer/PanelContainer" unique_id=30580067]
+layout_mode = 2
+theme = ExtResource("6_gee14")
+
+[node name="ComplLabel" type="Label" parent="ui/CompleteMenu/CenterContainer/PanelContainer/VBoxContainer" unique_id=663955883]
+layout_mode = 2
+text = "LEVEL COMPLETE"
+
+[node name="NextButton" type="Button" parent="ui/CompleteMenu/CenterContainer/PanelContainer/VBoxContainer" unique_id=750854475]
+layout_mode = 2
+text = "Next"
+
+[node name="RetryButton" type="Button" parent="ui/CompleteMenu/CenterContainer/PanelContainer/VBoxContainer" unique_id=1494677762]
+layout_mode = 2
+text = "Retry"
+
+[node name="LevelSelectButton" type="Button" parent="ui/CompleteMenu/CenterContainer/PanelContainer/VBoxContainer" unique_id=1547248591]
+layout_mode = 2
+text = "Back to menu"
+
+[connection signal="pressed" from="ui/PauseMenu/CenterContainer/PanelContainer/VBoxContainer/ResumeButton" to="ui/PauseMenu" method="_on_resume_button_pressed"]
+[connection signal="pressed" from="ui/PauseMenu/CenterContainer/PanelContainer/VBoxContainer/RestartButton" to="ui/PauseMenu" method="_on_restart_button_pressed"]
+[connection signal="pressed" from="ui/PauseMenu/CenterContainer/PanelContainer/VBoxContainer/MenuButton" to="ui/PauseMenu" method="_on_menu_button_pressed"]
+[connection signal="pressed" from="ui/CompleteMenu/CenterContainer/PanelContainer/VBoxContainer/NextButton" to="ui/CompleteMenu" method="_on_next_button_pressed"]
+[connection signal="pressed" from="ui/CompleteMenu/CenterContainer/PanelContainer/VBoxContainer/RetryButton" to="ui/CompleteMenu" method="_on_retry_button_pressed"]
+[connection signal="pressed" from="ui/CompleteMenu/CenterContainer/PanelContainer/VBoxContainer/LevelSelectButton" to="ui/CompleteMenu" method="_on_level_select_button_pressed"]

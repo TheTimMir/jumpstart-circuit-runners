@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="PcbDecorationProfile" format=3 uid="uid://31u8ecju7cl2"]
+
+[ext_resource type="Script" uid="uid://0tgut1fw6kjo" path="res://scripts/data/pcb_decoration_profile.gd" id="1_2qfct"]
+
+[resource]
+script = ExtResource("1_2qfct")
+metadata/_custom_type_script = "uid://0tgut1fw6kjo"

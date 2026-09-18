@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://m0t5xvrhldct"]
+
+[ext_resource type="Script" uid="uid://d2f24t6kudr0c" path="res://scripts/menu_bg.gd" id="1_lod4x"]
+[ext_resource type="PackedScene" uid="uid://dsmt65jksdpvt" path="res://scenes/circuit_cell.tscn" id="2_0wcor"]
+[ext_resource type="Script" uid="uid://0tgut1fw6kjo" path="res://scripts/data/pcb_decoration_profile.gd" id="3_d6sgc"]
+
+[sub_resource type="Resource" id="Resource_lod4x"]
+script = ExtResource("3_d6sgc")
+metadata/_custom_type_script = "uid://0tgut1fw6kjo"
+
+[node name="MenuBg" type="Control" unique_id=156636993]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_lod4x")
+circuit_cell_scene = ExtResource("2_0wcor")
+decoration_profile = SubResource("Resource_lod4x")
+pcb_variant = 3
+fade_time = 1.0
+
+[node name="LayerA" type="Node2D" parent="." unique_id=17904329]
+unique_name_in_owner = true
+
+[node name="LayerB" type="Node2D" parent="." unique_id=2118573933]
+unique_name_in_owner = true
+
+[node name="RefreshTimer" type="Timer" parent="." unique_id=1140284437]
+unique_name_in_owner = true
+
+[connection signal="timeout" from="RefreshTimer" to="." method="_on_refresh_timer_timeout"]

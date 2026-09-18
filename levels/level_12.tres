@@ -1,0 +1,539 @@
+[gd_resource type="Resource" script_class="CircuitLevelData" format=3]
+
+[ext_resource type="Script" uid="uid://bypopb1pmqtog" path="res://scripts/data/circuit_component_data.gd" id="1_comp"]
+[ext_resource type="Script" uid="uid://b3sorigmjlsad" path="res://scripts/data/circuit_edge_data.gd" id="2_edge"]
+[ext_resource type="Resource" uid="uid://31u8ecju7cl2" path="res://settings/default_pcb_decoration_profile.tres" id="3_profile"]
+[ext_resource type="Script" uid="uid://baxbeoqjajh7g" path="res://scripts/data/circuit_level_data.gd" id="4_level"]
+
+[sub_resource type="Resource" id="Resource_c00"]
+script = ExtResource("1_comp")
+position = Vector2i(2, 13)
+type = 0
+strength = 1
+metadata/_custom_type_script = "uid://bypopb1pmqtog"
+
+[sub_resource type="Resource" id="Resource_c01"]
+script = ExtResource("1_comp")
+position = Vector2i(6, 11)
+type = 1
+strength = 1
+metadata/_custom_type_script = "uid://bypopb1pmqtog"
+
+[sub_resource type="Resource" id="Resource_c02"]
+script = ExtResource("1_comp")
+position = Vector2i(10, 8)
+type = 0
+strength = 1
+metadata/_custom_type_script = "uid://bypopb1pmqtog"
+
+[sub_resource type="Resource" id="Resource_c03"]
+script = ExtResource("1_comp")
+position = Vector2i(10, 6)
+type = 0
+strength = 1
+metadata/_custom_type_script = "uid://bypopb1pmqtog"
+
+[sub_resource type="Resource" id="Resource_c04"]
+script = ExtResource("1_comp")
+position = Vector2i(12, 4)
+type = 1
+strength = 1
+metadata/_custom_type_script = "uid://bypopb1pmqtog"
+
+[sub_resource type="Resource" id="Resource_e000"]
+script = ExtResource("2_edge")
+from = Vector2i(0, 13)
+to = Vector2i(1, 13)
+width = 3
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e001"]
+script = ExtResource("2_edge")
+from = Vector2i(1, 13)
+to = Vector2i(2, 13)
+width = 3
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e002"]
+script = ExtResource("2_edge")
+from = Vector2i(2, 13)
+to = Vector2i(3, 13)
+width = 2
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e003"]
+script = ExtResource("2_edge")
+from = Vector2i(3, 13)
+to = Vector2i(4, 13)
+width = 2
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e004"]
+script = ExtResource("2_edge")
+from = Vector2i(4, 13)
+to = Vector2i(4, 12)
+width = 2
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e005"]
+script = ExtResource("2_edge")
+from = Vector2i(4, 12)
+to = Vector2i(4, 11)
+width = 2
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e006"]
+script = ExtResource("2_edge")
+from = Vector2i(4, 11)
+to = Vector2i(5, 11)
+width = 2
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e007"]
+script = ExtResource("2_edge")
+from = Vector2i(5, 11)
+to = Vector2i(6, 11)
+width = 2
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e008"]
+script = ExtResource("2_edge")
+from = Vector2i(6, 11)
+to = Vector2i(7, 11)
+width = 3
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e009"]
+script = ExtResource("2_edge")
+from = Vector2i(7, 11)
+to = Vector2i(8, 11)
+width = 3
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e010"]
+script = ExtResource("2_edge")
+from = Vector2i(8, 11)
+to = Vector2i(8, 10)
+width = 3
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e011"]
+script = ExtResource("2_edge")
+from = Vector2i(8, 10)
+to = Vector2i(8, 9)
+width = 3
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e012"]
+script = ExtResource("2_edge")
+from = Vector2i(8, 9)
+to = Vector2i(8, 8)
+width = 3
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e013"]
+script = ExtResource("2_edge")
+from = Vector2i(8, 8)
+to = Vector2i(9, 8)
+width = 3
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e014"]
+script = ExtResource("2_edge")
+from = Vector2i(9, 8)
+to = Vector2i(10, 8)
+width = 3
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e015"]
+script = ExtResource("2_edge")
+from = Vector2i(10, 8)
+to = Vector2i(11, 8)
+width = 2
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e016"]
+script = ExtResource("2_edge")
+from = Vector2i(11, 8)
+to = Vector2i(12, 8)
+width = 2
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e017"]
+script = ExtResource("2_edge")
+from = Vector2i(12, 8)
+to = Vector2i(12, 7)
+width = 2
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e018"]
+script = ExtResource("2_edge")
+from = Vector2i(12, 7)
+to = Vector2i(12, 6)
+width = 2
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e019"]
+script = ExtResource("2_edge")
+from = Vector2i(12, 6)
+to = Vector2i(11, 6)
+width = 2
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e020"]
+script = ExtResource("2_edge")
+from = Vector2i(11, 6)
+to = Vector2i(10, 6)
+width = 2
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e021"]
+script = ExtResource("2_edge")
+from = Vector2i(10, 6)
+to = Vector2i(9, 6)
+width = 1
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e022"]
+script = ExtResource("2_edge")
+from = Vector2i(9, 6)
+to = Vector2i(9, 5)
+width = 1
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e023"]
+script = ExtResource("2_edge")
+from = Vector2i(9, 5)
+to = Vector2i(9, 4)
+width = 1
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e024"]
+script = ExtResource("2_edge")
+from = Vector2i(9, 4)
+to = Vector2i(10, 4)
+width = 1
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e025"]
+script = ExtResource("2_edge")
+from = Vector2i(10, 4)
+to = Vector2i(11, 4)
+width = 1
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e026"]
+script = ExtResource("2_edge")
+from = Vector2i(11, 4)
+to = Vector2i(12, 4)
+width = 1
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e027"]
+script = ExtResource("2_edge")
+from = Vector2i(12, 4)
+to = Vector2i(13, 4)
+width = 2
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e028"]
+script = ExtResource("2_edge")
+from = Vector2i(13, 4)
+to = Vector2i(14, 4)
+width = 2
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e029"]
+script = ExtResource("2_edge")
+from = Vector2i(14, 4)
+to = Vector2i(14, 3)
+width = 2
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e030"]
+script = ExtResource("2_edge")
+from = Vector2i(14, 3)
+to = Vector2i(14, 2)
+width = 2
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e031"]
+script = ExtResource("2_edge")
+from = Vector2i(14, 2)
+to = Vector2i(15, 2)
+width = 2
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e032"]
+script = ExtResource("2_edge")
+from = Vector2i(15, 2)
+to = Vector2i(16, 2)
+width = 2
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e033"]
+script = ExtResource("2_edge")
+from = Vector2i(16, 2)
+to = Vector2i(17, 2)
+width = 2
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e034"]
+script = ExtResource("2_edge")
+from = Vector2i(4, 13)
+to = Vector2i(5, 13)
+width = 2
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e035"]
+script = ExtResource("2_edge")
+from = Vector2i(5, 13)
+to = Vector2i(6, 13)
+width = 2
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e036"]
+script = ExtResource("2_edge")
+from = Vector2i(6, 13)
+to = Vector2i(7, 13)
+width = 2
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e037"]
+script = ExtResource("2_edge")
+from = Vector2i(7, 13)
+to = Vector2i(8, 13)
+width = 2
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e038"]
+script = ExtResource("2_edge")
+from = Vector2i(4, 11)
+to = Vector2i(4, 10)
+width = 2
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e039"]
+script = ExtResource("2_edge")
+from = Vector2i(4, 10)
+to = Vector2i(4, 9)
+width = 2
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e040"]
+script = ExtResource("2_edge")
+from = Vector2i(4, 9)
+to = Vector2i(4, 8)
+width = 2
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e041"]
+script = ExtResource("2_edge")
+from = Vector2i(4, 8)
+to = Vector2i(4, 7)
+width = 2
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e042"]
+script = ExtResource("2_edge")
+from = Vector2i(8, 11)
+to = Vector2i(9, 11)
+width = 3
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e043"]
+script = ExtResource("2_edge")
+from = Vector2i(9, 11)
+to = Vector2i(10, 11)
+width = 3
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e044"]
+script = ExtResource("2_edge")
+from = Vector2i(10, 11)
+to = Vector2i(11, 11)
+width = 3
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e045"]
+script = ExtResource("2_edge")
+from = Vector2i(11, 11)
+to = Vector2i(12, 11)
+width = 3
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e046"]
+script = ExtResource("2_edge")
+from = Vector2i(12, 11)
+to = Vector2i(13, 11)
+width = 3
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e047"]
+script = ExtResource("2_edge")
+from = Vector2i(8, 8)
+to = Vector2i(8, 7)
+width = 3
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e048"]
+script = ExtResource("2_edge")
+from = Vector2i(8, 7)
+to = Vector2i(8, 6)
+width = 3
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e049"]
+script = ExtResource("2_edge")
+from = Vector2i(8, 6)
+to = Vector2i(8, 5)
+width = 3
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e050"]
+script = ExtResource("2_edge")
+from = Vector2i(12, 8)
+to = Vector2i(13, 8)
+width = 2
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e051"]
+script = ExtResource("2_edge")
+from = Vector2i(13, 8)
+to = Vector2i(14, 8)
+width = 2
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e052"]
+script = ExtResource("2_edge")
+from = Vector2i(14, 8)
+to = Vector2i(15, 8)
+width = 2
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e053"]
+script = ExtResource("2_edge")
+from = Vector2i(15, 8)
+to = Vector2i(16, 8)
+width = 2
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e054"]
+script = ExtResource("2_edge")
+from = Vector2i(16, 8)
+to = Vector2i(17, 8)
+width = 2
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e055"]
+script = ExtResource("2_edge")
+from = Vector2i(12, 6)
+to = Vector2i(13, 6)
+width = 2
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e056"]
+script = ExtResource("2_edge")
+from = Vector2i(13, 6)
+to = Vector2i(14, 6)
+width = 2
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e057"]
+script = ExtResource("2_edge")
+from = Vector2i(14, 6)
+to = Vector2i(15, 6)
+width = 2
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e058"]
+script = ExtResource("2_edge")
+from = Vector2i(15, 6)
+to = Vector2i(16, 6)
+width = 2
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e059"]
+script = ExtResource("2_edge")
+from = Vector2i(9, 6)
+to = Vector2i(8, 6)
+width = 1
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e060"]
+script = ExtResource("2_edge")
+from = Vector2i(8, 6)
+to = Vector2i(7, 6)
+width = 1
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e061"]
+script = ExtResource("2_edge")
+from = Vector2i(7, 6)
+to = Vector2i(6, 6)
+width = 1
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e062"]
+script = ExtResource("2_edge")
+from = Vector2i(6, 6)
+to = Vector2i(5, 6)
+width = 1
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e063"]
+script = ExtResource("2_edge")
+from = Vector2i(9, 4)
+to = Vector2i(9, 3)
+width = 1
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e064"]
+script = ExtResource("2_edge")
+from = Vector2i(9, 3)
+to = Vector2i(9, 2)
+width = 1
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e065"]
+script = ExtResource("2_edge")
+from = Vector2i(9, 2)
+to = Vector2i(9, 1)
+width = 1
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e066"]
+script = ExtResource("2_edge")
+from = Vector2i(14, 4)
+to = Vector2i(15, 4)
+width = 2
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e067"]
+script = ExtResource("2_edge")
+from = Vector2i(15, 4)
+to = Vector2i(16, 4)
+width = 2
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e068"]
+script = ExtResource("2_edge")
+from = Vector2i(16, 4)
+to = Vector2i(17, 4)
+width = 2
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[resource]
+script = ExtResource("4_level")
+width = 18
+height = 15
+cell_size = 96
+pcb_variant = 3
+start_cell = Vector2i(0, 13)
+end_cell = Vector2i(17, 2)
+start_electron_size = 3
+edges = Array[ExtResource("2_edge")]([SubResource("Resource_e000"), SubResource("Resource_e001"), SubResource("Resource_e002"), SubResource("Resource_e003"), SubResource("Resource_e004"), SubResource("Resource_e005"), SubResource("Resource_e006"), SubResource("Resource_e007"), SubResource("Resource_e008"), SubResource("Resource_e009"), SubResource("Resource_e010"), SubResource("Resource_e011"), SubResource("Resource_e012"), SubResource("Resource_e013"), SubResource("Resource_e014"), SubResource("Resource_e015"), SubResource("Resource_e016"), SubResource("Resource_e017"), SubResource("Resource_e018"), SubResource("Resource_e019"), SubResource("Resource_e020"), SubResource("Resource_e021"), SubResource("Resource_e022"), SubResource("Resource_e023"), SubResource("Resource_e024"), SubResource("Resource_e025"), SubResource("Resource_e026"), SubResource("Resource_e027"), SubResource("Resource_e028"), SubResource("Resource_e029"), SubResource("Resource_e030"), SubResource("Resource_e031"), SubResource("Resource_e032"), SubResource("Resource_e033"), SubResource("Resource_e034"), SubResource("Resource_e035"), SubResource("Resource_e036"), SubResource("Resource_e037"), SubResource("Resource_e038"), SubResource("Resource_e039"), SubResource("Resource_e040"), SubResource("Resource_e041"), SubResource("Resource_e042"), SubResource("Resource_e043"), SubResource("Resource_e044"), SubResource("Resource_e045"), SubResource("Resource_e046"), SubResource("Resource_e047"), SubResource("Resource_e048"), SubResource("Resource_e049"), SubResource("Resource_e050"), SubResource("Resource_e051"), SubResource("Resource_e052"), SubResource("Resource_e053"), SubResource("Resource_e054"), SubResource("Resource_e055"), SubResource("Resource_e056"), SubResource("Resource_e057"), SubResource("Resource_e058"), SubResource("Resource_e059"), SubResource("Resource_e060"), SubResource("Resource_e061"), SubResource("Resource_e062"), SubResource("Resource_e063"), SubResource("Resource_e064"), SubResource("Resource_e065"), SubResource("Resource_e066"), SubResource("Resource_e067"), SubResource("Resource_e068")])
+components = Array[ExtResource("1_comp")]([SubResource("Resource_c00"), SubResource("Resource_c01"), SubResource("Resource_c02"), SubResource("Resource_c03"), SubResource("Resource_c04")])
+decoration_seed = 2096
+decoration_profile = ExtResource("3_profile")
+metadata/_custom_type_script = "uid://baxbeoqjajh7g"

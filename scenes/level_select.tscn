@@ -1,0 +1,85 @@
+[gd_scene format=3 uid="uid://mi80ca642r8n"]
+
+[ext_resource type="Script" uid="uid://b5bdd1052o70t" path="res://scripts/level_select.gd" id="1_3shnc"]
+[ext_resource type="Theme" uid="uid://q85jv82aq28n" path="res://pixelkiln_ui/ironvale/theme.tres" id="1_p0wlc"]
+[ext_resource type="PackedScene" uid="uid://m0t5xvrhldct" path="res://scenes/menu_bg.tscn" id="3_2epne"]
+[ext_resource type="Resource" uid="uid://c0j4pgxvt1hut" path="res://settings/menus.tres" id="4_rif6e"]
+
+[node name="LevelSelect" type="Control" unique_id=518430581]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_p0wlc")
+script = ExtResource("1_3shnc")
+
+[node name="BGLayer" type="CanvasLayer" parent="." unique_id=496207411]
+layer = -10
+
+[node name="MenuBg" parent="BGLayer" unique_id=156636993 instance=ExtResource("3_2epne")]
+decoration_profile = ExtResource("4_rif6e")
+fade_time = 1.2
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=2066716173]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="MarginContainer" unique_id=1178910173]
+layout_mode = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/CenterContainer" unique_id=64192723]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/CenterContainer/PanelContainer" unique_id=665851390]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="MarginContainer/CenterContainer/PanelContainer/VBoxContainer" unique_id=2031703884]
+layout_mode = 2
+text = "Levels"
+
+[node name="LevelGrid" type="GridContainer" parent="MarginContainer/CenterContainer/PanelContainer/VBoxContainer" unique_id=177575092]
+unique_name_in_owner = true
+layout_mode = 2
+columns = 4
+
+[node name="DifficultyLabel" type="Label" parent="MarginContainer/CenterContainer/PanelContainer/VBoxContainer" unique_id=1959993427]
+layout_mode = 2
+
+[node name="DifficultyButtons" type="HBoxContainer" parent="MarginContainer/CenterContainer/PanelContainer/VBoxContainer" unique_id=2109425233]
+layout_mode = 2
+
+[node name="EasyButton" type="Button" parent="MarginContainer/CenterContainer/PanelContainer/VBoxContainer/DifficultyButtons" unique_id=1107067861]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Easy"
+
+[node name="MediumButtion" type="Button" parent="MarginContainer/CenterContainer/PanelContainer/VBoxContainer/DifficultyButtons" unique_id=30479751]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Medium"
+
+[node name="HardButton" type="Button" parent="MarginContainer/CenterContainer/PanelContainer/VBoxContainer/DifficultyButtons" unique_id=367752945]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Hard"
+
+[node name="DifficultyNoteLabel" type="Label" parent="MarginContainer/CenterContainer/PanelContainer/VBoxContainer" unique_id=1884442925]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(1, 1)
+layout_mode = 2
+autowrap_mode = 2
+
+[node name="BackButton" type="Button" parent="MarginContainer/CenterContainer/PanelContainer/VBoxContainer" unique_id=1269162116]
+layout_mode = 2
+text = "Back.."
+
+[connection signal="pressed" from="MarginContainer/CenterContainer/PanelContainer/VBoxContainer/DifficultyButtons/EasyButton" to="." method="_on_easy_button_pressed"]
+[connection signal="pressed" from="MarginContainer/CenterContainer/PanelContainer/VBoxContainer/DifficultyButtons/MediumButtion" to="." method="_on_medium_buttion_pressed"]
+[connection signal="pressed" from="MarginContainer/CenterContainer/PanelContainer/VBoxContainer/DifficultyButtons/HardButton" to="." method="_on_hard_button_pressed"]
+[connection signal="pressed" from="MarginContainer/CenterContainer/PanelContainer/VBoxContainer/BackButton" to="." method="_on_back_button_pressed"]

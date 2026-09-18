@@ -1,0 +1,64 @@
+[gd_resource type="Resource" script_class="CircuitLevelData" format=3 uid="uid://cmvh5b43ny0l4"]
+
+[ext_resource type="Script" uid="uid://bypopb1pmqtog" path="res://scripts/data/circuit_component_data.gd" id="1_dpay0"]
+[ext_resource type="Script" uid="uid://b3sorigmjlsad" path="res://scripts/data/circuit_edge_data.gd" id="2_7h3od"]
+[ext_resource type="Resource" uid="uid://31u8ecju7cl2" path="res://settings/default_pcb_decoration_profile.tres" id="2_oagrl"]
+[ext_resource type="Script" uid="uid://baxbeoqjajh7g" path="res://scripts/data/circuit_level_data.gd" id="3_uktp3"]
+
+[sub_resource type="Resource" id="Resource_c00"]
+script = ExtResource("1_dpay0")
+position = Vector2i(2, 2)
+type = 1
+metadata/_custom_type_script = "uid://bypopb1pmqtog"
+
+[sub_resource type="Resource" id="Resource_e00"]
+script = ExtResource("2_7h3od")
+from = Vector2i(0, 2)
+to = Vector2i(1, 2)
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e01"]
+script = ExtResource("2_7h3od")
+from = Vector2i(1, 2)
+to = Vector2i(2, 2)
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e02"]
+script = ExtResource("2_7h3od")
+from = Vector2i(2, 2)
+to = Vector2i(3, 2)
+width = 2
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e03"]
+script = ExtResource("2_7h3od")
+from = Vector2i(3, 2)
+to = Vector2i(4, 2)
+width = 2
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e04"]
+script = ExtResource("2_7h3od")
+from = Vector2i(4, 2)
+to = Vector2i(5, 2)
+width = 2
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[sub_resource type="Resource" id="Resource_e05"]
+script = ExtResource("2_7h3od")
+from = Vector2i(5, 2)
+to = Vector2i(6, 2)
+width = 2
+metadata/_custom_type_script = "uid://b3sorigmjlsad"
+
+[resource]
+script = ExtResource("3_uktp3")
+width = 7
+height = 5
+start_cell = Vector2i(0, 2)
+end_cell = Vector2i(6, 2)
+start_electron_size = 1
+edges = Array[ExtResource("2_7h3od")]([SubResource("Resource_e00"), SubResource("Resource_e01"), SubResource("Resource_e02"), SubResource("Resource_e03"), SubResource("Resource_e04"), SubResource("Resource_e05")])
+components = Array[ExtResource("1_dpay0")]([SubResource("Resource_c00")])
+decoration_profile = ExtResource("2_oagrl")
+metadata/_custom_type_script = "uid://baxbeoqjajh7g"

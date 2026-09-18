@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://c1bcky868w2b5"]
+
+[ext_resource type="Script" uid="uid://dqlvlhi65pe78" path="res://scripts/electron.gd" id="1_df1db"]
+
+[node name="Elecrton" type="Node2D" unique_id=202974781]
+script = ExtResource("1_df1db")

@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dsmt65jksdpvt"]
+
+[ext_resource type="Script" uid="uid://b2mgq5havr1cn" path="res://scripts/circuit_cell.gd" id="1_od808"]
+
+[node name="CircuitCell" type="Node2D" unique_id=996457696]
+script = ExtResource("1_od808")

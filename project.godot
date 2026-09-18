@@ -11,13 +11,28 @@ config_version=5
 [application]
 
 config/name="Circuit Runners"
+run/main_scene="uid://ctfhm22ios2hm"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[audio]
+
+buses/default_bus_layout="uid://ebdppqehhx04"
+
+[autoload]
+
+AudioManager="*uid://dehwy4pcf6eit"
+GameSession="*uid://chvw4al2askx3"
 
 [display]
 
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
+window/stretch/scale=2.0
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/godot_super-wakatime/plugin.cfg")
 
 [physics]
 
@@ -25,6 +40,7 @@ window/stretch/aspect="expand"
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"

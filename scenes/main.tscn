@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://ctfhm22ios2hm"]
+
+[ext_resource type="Script" uid="uid://b4o4ytt86e0r7" path="res://scripts/menu.gd" id="1_o5qli"]
+[ext_resource type="Theme" uid="uid://q85jv82aq28n" path="res://pixelkiln_ui/ironvale/theme.tres" id="1_sugp2"]
+[ext_resource type="PackedScene" uid="uid://m0t5xvrhldct" path="res://scenes/menu_bg.tscn" id="3_sugp2"]
+[ext_resource type="Resource" uid="uid://c0j4pgxvt1hut" path="res://settings/menus.tres" id="4_jyhfs"]
+[ext_resource type="Texture2D" uid="uid://huqs1a202h2c" path="res://art/logo.png" id="5_tbgi4"]
+
+[node name="Main" type="Control" unique_id=879122950]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_sugp2")
+script = ExtResource("1_o5qli")
+
+[node name="BGLayer" type="CanvasLayer" parent="." unique_id=1568490832]
+layer = -10
+
+[node name="MenuBg" parent="BGLayer" unique_id=156636993 instance=ExtResource("3_sugp2")]
+decoration_profile = ExtResource("4_jyhfs")
+pcb_variant = 1
+fade_time = 1.2
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1770426348]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="CenterContainer" unique_id=1390248718]
+layout_mode = 2
+offset_transform_enabled = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/PanelContainer" unique_id=852524655]
+layout_mode = 2
+offset_transform_scale = Vector2(1.26, 1.26)
+
+[node name="Logo" type="TextureRect" parent="CenterContainer/PanelContainer/VBoxContainer" unique_id=2043284100]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+offset_transform_scale = Vector2(2.88, 2.88)
+texture = ExtResource("5_tbgi4")
+expand_mode = 5
+
+[node name="PlayButton" type="Button" parent="CenterContainer/PanelContainer/VBoxContainer" unique_id=1041424629]
+layout_mode = 2
+text = "Play"
+
+[node name="QuitButton" type="Button" parent="CenterContainer/PanelContainer/VBoxContainer" unique_id=393277918]
+layout_mode = 2
+text = "Quit"
+
+[connection signal="pressed" from="CenterContainer/PanelContainer/VBoxContainer/PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="CenterContainer/PanelContainer/VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]

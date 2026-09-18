@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="CircuitLevelData" format=3 uid="uid://qxeubphmwrva"]
+
+[ext_resource type="Script" uid="uid://bypopb1pmqtog" path="res://scripts/data/circuit_component_data.gd" id="1_h7hrn"]
+[ext_resource type="Script" uid="uid://b3sorigmjlsad" path="res://scripts/data/circuit_edge_data.gd" id="2_ejtga"]
+[ext_resource type="Resource" uid="uid://31u8ecju7cl2" path="res://settings/default_pcb_decoration_profile.tres" id="2_g0tqo"]
+[ext_resource type="Script" uid="uid://baxbeoqjajh7g" path="res://scripts/data/circuit_level_data.gd" id="3_g0tqo"]
+
+[resource]
+script = ExtResource("3_g0tqo")
+decoration_profile = ExtResource("2_g0tqo")
+metadata/_custom_type_script = "uid://baxbeoqjajh7g"

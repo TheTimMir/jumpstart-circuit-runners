@@ -1,0 +1,81 @@
+[gd_scene format=3 uid="uid://dqn7qxwibx88o"]
+
+[ext_resource type="Theme" uid="uid://q85jv82aq28n" path="res://pixelkiln_ui/ironvale/theme.tres" id="1_v6dfi"]
+[ext_resource type="Script" uid="uid://bnt8osptaocht" path="res://scripts/game_hud.gd" id="2_c5b12"]
+
+[node name="GameHud" type="Control" unique_id=7754749]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme = ExtResource("1_v6dfi")
+script = ExtResource("2_c5b12")
+
+[node name="TopMargin" type="MarginContainer" parent="." unique_id=214872648]
+custom_minimum_size = Vector2(550, 0)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -250.0
+offset_top = 20.0
+offset_right = 250.0
+offset_bottom = 62.0
+grow_horizontal = 2
+
+[node name="TopRow" type="HBoxContainer" parent="TopMargin" unique_id=1791341957]
+layout_mode = 2
+
+[node name="InfoPanel" type="PanelContainer" parent="TopMargin/TopRow" unique_id=1307236511]
+layout_mode = 2
+
+[node name="InfoBox" type="VBoxContainer" parent="TopMargin/TopRow/InfoPanel" unique_id=416401185]
+layout_mode = 2
+
+[node name="LevelLabel" type="Label" parent="TopMargin/TopRow/InfoPanel/InfoBox" unique_id=2135682223]
+unique_name_in_owner = true
+layout_mode = 2
+text = "asasdadsadsadsas"
+
+[node name="SizeLabel" type="Label" parent="TopMargin/TopRow/InfoPanel/InfoBox" unique_id=77606603]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Spacer" type="Control" parent="TopMargin/TopRow" unique_id=2029500582]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="DifficultyPanel" type="PanelContainer" parent="TopMargin/TopRow" unique_id=2137609534]
+layout_mode = 2
+
+[node name="DifficultyLabel" type="Label" parent="TopMargin/TopRow/DifficultyPanel" unique_id=109201473]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="HintContainer" type="MarginContainer" parent="." unique_id=785403532]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -73.0
+offset_right = 20.0
+offset_bottom = -33.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="CenterContainer" type="CenterContainer" parent="HintContainer" unique_id=1700873489]
+layout_mode = 2
+
+[node name="HintPanel" type="PanelContainer" parent="HintContainer/CenterContainer" unique_id=1782154138]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="HintLabel" type="Label" parent="HintContainer/CenterContainer/HintPanel" unique_id=2144562597]
+unique_name_in_owner = true
+layout_mode = 2
